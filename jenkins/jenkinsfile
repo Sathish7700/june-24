@@ -4,12 +4,13 @@ pipeline {
         stage('Build') { 
             steps {
                 sh 'echo "i build the jenkins"' 
-            }git
+            }
         }
         stage('Test') { 
             steps {
                 sh 'echo "i test the jenkins"'
             }
+
         }
         stage('Deploy') { 
             steps {
@@ -18,3 +19,4 @@ pipeline {
         }
     }
 }
+
